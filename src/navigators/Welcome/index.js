@@ -1,18 +1,24 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 
+// import AsyncStorage from '@react-native-async-storage/async-storage';
 import Bottom from './Bottom';
 import CustomList from '../../components/CustomFlatlist';
 import { Images } from '../../shared/Images';
 import TopView from './TopView';
 import { View } from 'react-native';
-import { useSelector } from 'react-redux';
+import { heightPercentageToDP } from 'react-native-responsive-screen';
+import { setWelcome } from '../../store/welcome';
 
 const Welcome = () => {
   const dataIndex = useSelector(data => data.welcome.indexList);
   const [indexRequired, setIndexRequired] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const flatlistRef = useRef(null);
+  const dispatch = useDispatch();
   const item = [
     {
-      image: Images.mainImage,
+      image: Images.flower,
       heading: 'WE ARE CUTE',
       subHeading: 'Discover all kinds of plants in the World.',
       body: 'Quickly scan the plant and find in our complete catalogue everything about the plant you want',
@@ -37,69 +43,24 @@ const Welcome = () => {
     console.log(data, 'data from child is');
     setIndexRequired(data);
   };
+  const set_index = raw => {
+    console.log(raw, 'raw value is:');
+    setCurrentIndex(prev => prev + 1);
+  };
   console.log(indexRequired, 'outside the render');
   return (
-    <View>
+    <View style={{height:heightPercentageToDP(100)}} >
       <TopView indexCheck={indexRequired} />
       <CustomList
+        reference={flatlistRef}
         data={item}
         pull_data={pull_data}
         setIndexItem={indexRequired}
+        Index={currentIndex}
       />
-      <Bottom indexValue={indexRequired} />
+      <Bottom indexValue={indexRequired} data={item} referred={flatlistRef} />
     </View>
   );
 };
 
 export default Welcome;
-{
-  /* <View style={style.bottomView}>
-        <Text>-{indexRequired + 1}-</Text>
-        {indexRequired !== 2 ? (
-          <View>
-            <TouchableOpacity style={style.nextButton}>
-              <View>
-                <Text style={style.nextText}>Next</Text>
-              </View>
-            </TouchableOpacity>
-          </View>
-        ) : (
-          <View>
-            <TouchableOpacity style={style.startButton}>
-              <View>
-                <Text style={style.nextText}>Start</Text>
-              </View>
-            </TouchableOpacity>
-          </View>
-        )}
-      </View> */
-}
-{
-  /* {indexRequired !== 2 ? (
-        <View style={style.skip}>
-          <TouchableOpacity
-            hitSlop={{
-              top: 5,
-              left: 20,
-              bottom: 10,
-              right: 20,
-            }}
-          >
-            <Text>SKIP</Text>
-          </TouchableOpacity>
-        </View>
-      ) : (
-        <View style={style.skip}>
-          <TouchableOpacity
-            hitSlop={{
-              top: 5,
-              left: 20,
-              bottom: 10,
-              right: 20,
-            }}
-          >
-            <Text />
-          </TouchableOpacity>
-        </View>
-      )} */
-}

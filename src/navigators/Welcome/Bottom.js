@@ -2,16 +2,50 @@ import { Text, TouchableOpacity, View } from 'react-native';
 
 import Indicators from '../../components/CustomFlatlist/Indicators';
 import React from 'react';
+import { setWelcome } from '../../store/welcome';
 import { style } from './style';
+import { useDispatch } from 'react-redux';
+import { useNavigation } from '@react-navigation/native';
 
 const Bottom = ({ ...props }) => {
+  const dispatch = useDispatch();
+  const navigation = useNavigation();
+  console.log(props,"PROPS");
+  const renderIndicator = () => {
+    const arrayToBeTraversed = props.data;
+    return (
+      <View style={style.indicatorStyle}>
+        {arrayToBeTraversed.map((_, index) =>
+          index === props.indexValue ? (
+            <View key={index} style={style.indicatorFocused} />
+          ) : (
+            <View key={index} style={style.indicatorNormal} />
+          ),
+        )}
+      </View>
+    );
+  };
+
+  const handleNext = () => {
+    // props.set_index(prev => prev + 1);
+    console.log(props.indexValue, 'index required in next button');
+    if (props.referred.current) {
+      props.referred.current.scrollToIndex({
+        animated: true,
+        index: props.indexValue + 1,
+      });
+    }
+  };
+
   return (
     <View style={style.bottomView}>
-      <Text>-{props.indexValue + 1}-</Text>
-      {/* <Indicators totalItems={3} /> */}
+      {renderIndicator()}
       {props.indexValue !== 2 ? (
         <View>
-          <TouchableOpacity style={style.nextButton}>
+          <TouchableOpacity
+            style={style.nextButton}
+            onPress={() => handleNext()}
+          >
             <View>
               <Text style={style.nextText}>Next</Text>
             </View>
@@ -19,7 +53,19 @@ const Bottom = ({ ...props }) => {
         </View>
       ) : (
         <View>
-          <TouchableOpacity style={style.startButton}>
+          <TouchableOpacity
+            style={style.startButton}
+            onPress={() => {
+              navigation.navigate('Home');
+              dispatch(setWelcome());
+            }}
+            hitSlop={{
+              top: 5,
+              left: 5,
+              bottom: 5,
+              right: 5,
+            }}
+          >
             <View>
               <Text style={style.nextText}>Start</Text>
             </View>

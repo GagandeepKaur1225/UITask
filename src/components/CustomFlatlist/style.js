@@ -1,23 +1,31 @@
+import { Platform, StyleSheet } from 'react-native';
+import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
 import {
   heightPercentageToDP,
   widthPercentageToDP,
 } from 'react-native-responsive-screen';
 
-import { StyleSheet } from 'react-native';
-
 export const style = StyleSheet.create({
+  flatlist: {
+    height:
+      Platform.OS === 'ios'
+        ? heightPercentageToDP('60%')
+        : heightPercentageToDP('70%'),
+    marginTop: heightPercentageToDP('8%'),
+  },
   imageStyle: {
     width: '90%',
     height: '45%',
-    margin: heightPercentageToDP('4%'),
+    margin: heightPercentageToDP('3%'),
   },
   headerText: {
     color: '#87CEEB',
     fontWeight: '700',
     left: widthPercentageToDP('8%'),
+    fontSize: RFValue(15),
   },
   heading: {
-    fontSize: 24,
+    fontSize: RFValue(20),
     width: '85%',
     marginBottom: 3,
     marginTop: 3,
@@ -48,11 +56,14 @@ export const style = StyleSheet.create({
   },
   nextText: {
     // alignSelf: 'center',
+    fontWeight: '900',
     color: '#fff',
+    fontSize: RFValue(20),
   },
   body: {
     left: widthPercentageToDP('8%'),
     width: '85%',
+    fontSize: RFValue(10),
   },
   container: {
     flexDirection: 'row',

@@ -1,9 +1,10 @@
+import { Platform, StyleSheet } from 'react-native';
 import {
   heightPercentageToDP,
   widthPercentageToDP,
 } from 'react-native-responsive-screen';
 
-import { StyleSheet } from 'react-native';
+import { RFValue } from 'react-native-responsive-fontsize';
 
 export const style = StyleSheet.create({
   imageStyle: {
@@ -12,7 +13,7 @@ export const style = StyleSheet.create({
     margin: heightPercentageToDP('6%'),
   },
   headerText: {
-    color: '#87CEEB',
+    color: Platform.OS === 'ios' ? '#00fff3' : '#87CEEB',
     fontWeight: '700',
   },
   heading: {
@@ -28,7 +29,11 @@ export const style = StyleSheet.create({
     // borderWidth: 2,
     justifyContent: 'space-between',
     left: widthPercentageToDP('8%'),
-    marginTop: heightPercentageToDP('7%'),
+    // marginTop: heightPercentageToDP('7%'),
+    // borderWidth: 2,
+    // height: 80,
+    position: 'absolute',
+    bottom:RFValue(60) 
   },
   skip: {
     flexDirection: 'row',
@@ -42,7 +47,7 @@ export const style = StyleSheet.create({
     height: heightPercentageToDP('6%'),
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#87CEEB',
+    backgroundColor: Platform.OS === 'ios' ? '#00fff3' : '#87CEEB',
   },
   nextText: {
     // alignSelf: 'center',
@@ -55,5 +60,56 @@ export const style = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#FFA500',
+  },
+  indicatorFocused: {
+    width: 45,
+    height: 10,
+    borderRadius: 5,
+    backgroundColor: Platform.OS === 'ios' ? '#00fff3' : '#87CEEB',
+    marginHorizontal: 5,
+  },
+  indicatorNormal: {
+    width: 10,
+    height: 10,
+    borderRadius: 5,
+    backgroundColor: Platform.OS === 'ios' ? '#00fff3' : '#87CEEB',
+    marginHorizontal: 5,
+  },
+  indicatorStyle: {
+    flexDirection: 'row',
+    flex: 1,
+    alignItems: 'center',
+  },
+  buttonStyle: {
+    width: widthPercentageToDP('60%'),
+    top: heightPercentageToDP('35%'),
+    height: heightPercentageToDP('6%'),
+    left: widthPercentageToDP('20%'),
+    // borderWidth: 2,
+    borderRadius: 8,
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'row',
+    backgroundColor: '#fff',
+  },
+  googleLogo: {
+    height: '60%',
+    width: '20%',
+  },
+  buttonText: {
+    color: '#87CEEB',
+    fontWeight: '900',
+  },
+  logOut: {
+    width: widthPercentageToDP('60%'),
+    top: heightPercentageToDP('45%'),
+    height: heightPercentageToDP('6%'),
+    left: widthPercentageToDP('20%'),
+    // borderWidth: 2,
+    borderRadius: 8,
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'row',
+    backgroundColor: '#fff',
   },
 });
