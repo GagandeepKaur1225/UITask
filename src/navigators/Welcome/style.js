@@ -52,6 +52,8 @@ export const style = StyleSheet.create({
   nextText: {
     // alignSelf: 'center',
     color: '#fff',
+    fontWeight: '800',
+    fontSize: RFValue(15),
   },
   startButton: {
     borderRadius: 20,

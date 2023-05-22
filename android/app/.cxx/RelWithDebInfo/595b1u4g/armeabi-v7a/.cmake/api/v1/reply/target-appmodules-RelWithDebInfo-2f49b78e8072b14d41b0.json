@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "/Users/hidayatrehmat/Documents/gagan/Welcome/android/app/build/intermediates/cxx/Debug/6h3e4s6t/obj/arm64-v8a/libappmodules.so"
+			"path" : "/Users/hidayatrehmat/Documents/gagan/Welcome/android/app/build/intermediates/cxx/RelWithDebInfo/595b1u4g/obj/armeabi-v7a/libappmodules.so"
 		}
 	],
 	"backtrace" : 3,
@@ -94,7 +94,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC"
+					"fragment" : "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O2 -g -DNDEBUG -fPIC"
 				},
 				{
 					"backtrace" : 6,
@@ -228,7 +228,7 @@
 				{
 					"backtrace" : 4,
 					"isSystem" : true,
-					"path" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/d7a0d7162cd0dedc21dff471e4b0bd0d/transformed/react-android-0.71.3-debug/prefab/modules/fabricjni/include"
+					"path" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/a1a0f5331c2ddcdf82f7b19c69aa597d/transformed/react-android-0.71.3-release/prefab/modules/fabricjni/include"
 				},
 				{
 					"backtrace" : 4,
@@ -238,92 +238,92 @@
 				{
 					"backtrace" : 4,
 					"isSystem" : true,
-					"path" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/d7a0d7162cd0dedc21dff471e4b0bd0d/transformed/react-android-0.71.3-debug/prefab/modules/folly_runtime/include"
+					"path" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/a1a0f5331c2ddcdf82f7b19c69aa597d/transformed/react-android-0.71.3-release/prefab/modules/folly_runtime/include"
 				},
 				{
 					"backtrace" : 4,
 					"isSystem" : true,
-					"path" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/d7a0d7162cd0dedc21dff471e4b0bd0d/transformed/react-android-0.71.3-debug/prefab/modules/glog/include"
+					"path" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/a1a0f5331c2ddcdf82f7b19c69aa597d/transformed/react-android-0.71.3-release/prefab/modules/glog/include"
 				},
 				{
 					"backtrace" : 4,
 					"isSystem" : true,
-					"path" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/d7a0d7162cd0dedc21dff471e4b0bd0d/transformed/react-android-0.71.3-debug/prefab/modules/jsi/include"
+					"path" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/a1a0f5331c2ddcdf82f7b19c69aa597d/transformed/react-android-0.71.3-release/prefab/modules/jsi/include"
 				},
 				{
 					"backtrace" : 4,
 					"isSystem" : true,
-					"path" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/d7a0d7162cd0dedc21dff471e4b0bd0d/transformed/react-android-0.71.3-debug/prefab/modules/react_codegen_rncore/include"
+					"path" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/a1a0f5331c2ddcdf82f7b19c69aa597d/transformed/react-android-0.71.3-release/prefab/modules/react_codegen_rncore/include"
 				},
 				{
 					"backtrace" : 4,
 					"isSystem" : true,
-					"path" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/d7a0d7162cd0dedc21dff471e4b0bd0d/transformed/react-android-0.71.3-debug/prefab/modules/react_debug/include"
+					"path" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/a1a0f5331c2ddcdf82f7b19c69aa597d/transformed/react-android-0.71.3-release/prefab/modules/react_debug/include"
 				},
 				{
 					"backtrace" : 4,
 					"isSystem" : true,
-					"path" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/d7a0d7162cd0dedc21dff471e4b0bd0d/transformed/react-android-0.71.3-debug/prefab/modules/react_nativemodule_core/include"
+					"path" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/a1a0f5331c2ddcdf82f7b19c69aa597d/transformed/react-android-0.71.3-release/prefab/modules/react_nativemodule_core/include"
 				},
 				{
 					"backtrace" : 4,
 					"isSystem" : true,
-					"path" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/d7a0d7162cd0dedc21dff471e4b0bd0d/transformed/react-android-0.71.3-debug/prefab/modules/react_newarchdefaults/include"
+					"path" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/a1a0f5331c2ddcdf82f7b19c69aa597d/transformed/react-android-0.71.3-release/prefab/modules/react_newarchdefaults/include"
 				},
 				{
 					"backtrace" : 4,
 					"isSystem" : true,
-					"path" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/d7a0d7162cd0dedc21dff471e4b0bd0d/transformed/react-android-0.71.3-debug/prefab/modules/react_render_componentregistry/include"
+					"path" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/a1a0f5331c2ddcdf82f7b19c69aa597d/transformed/react-android-0.71.3-release/prefab/modules/react_render_componentregistry/include"
 				},
 				{
 					"backtrace" : 4,
 					"isSystem" : true,
-					"path" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/d7a0d7162cd0dedc21dff471e4b0bd0d/transformed/react-android-0.71.3-debug/prefab/modules/react_render_core/include"
+					"path" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/a1a0f5331c2ddcdf82f7b19c69aa597d/transformed/react-android-0.71.3-release/prefab/modules/react_render_core/include"
 				},
 				{
 					"backtrace" : 4,
 					"isSystem" : true,
-					"path" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/d7a0d7162cd0dedc21dff471e4b0bd0d/transformed/react-android-0.71.3-debug/prefab/modules/react_render_debug/include"
+					"path" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/a1a0f5331c2ddcdf82f7b19c69aa597d/transformed/react-android-0.71.3-release/prefab/modules/react_render_debug/include"
 				},
 				{
 					"backtrace" : 4,
 					"isSystem" : true,
-					"path" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/d7a0d7162cd0dedc21dff471e4b0bd0d/transformed/react-android-0.71.3-debug/prefab/modules/react_render_graphics/include"
+					"path" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/a1a0f5331c2ddcdf82f7b19c69aa597d/transformed/react-android-0.71.3-release/prefab/modules/react_render_graphics/include"
 				},
 				{
 					"backtrace" : 4,
 					"isSystem" : true,
-					"path" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/d7a0d7162cd0dedc21dff471e4b0bd0d/transformed/react-android-0.71.3-debug/prefab/modules/react_render_imagemanager/include"
+					"path" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/a1a0f5331c2ddcdf82f7b19c69aa597d/transformed/react-android-0.71.3-release/prefab/modules/react_render_imagemanager/include"
 				},
 				{
 					"backtrace" : 4,
 					"isSystem" : true,
-					"path" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/d7a0d7162cd0dedc21dff471e4b0bd0d/transformed/react-android-0.71.3-debug/prefab/modules/react_render_mapbuffer/include"
+					"path" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/a1a0f5331c2ddcdf82f7b19c69aa597d/transformed/react-android-0.71.3-release/prefab/modules/react_render_mapbuffer/include"
 				},
 				{
 					"backtrace" : 4,
 					"isSystem" : true,
-					"path" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/d7a0d7162cd0dedc21dff471e4b0bd0d/transformed/react-android-0.71.3-debug/prefab/modules/rrc_image/include"
+					"path" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/a1a0f5331c2ddcdf82f7b19c69aa597d/transformed/react-android-0.71.3-release/prefab/modules/rrc_image/include"
 				},
 				{
 					"backtrace" : 4,
 					"isSystem" : true,
-					"path" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/d7a0d7162cd0dedc21dff471e4b0bd0d/transformed/react-android-0.71.3-debug/prefab/modules/rrc_view/include"
+					"path" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/a1a0f5331c2ddcdf82f7b19c69aa597d/transformed/react-android-0.71.3-release/prefab/modules/rrc_view/include"
 				},
 				{
 					"backtrace" : 4,
 					"isSystem" : true,
-					"path" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/d7a0d7162cd0dedc21dff471e4b0bd0d/transformed/react-android-0.71.3-debug/prefab/modules/runtimeexecutor/include"
+					"path" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/a1a0f5331c2ddcdf82f7b19c69aa597d/transformed/react-android-0.71.3-release/prefab/modules/runtimeexecutor/include"
 				},
 				{
 					"backtrace" : 4,
 					"isSystem" : true,
-					"path" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/d7a0d7162cd0dedc21dff471e4b0bd0d/transformed/react-android-0.71.3-debug/prefab/modules/turbomodulejsijni/include"
+					"path" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/a1a0f5331c2ddcdf82f7b19c69aa597d/transformed/react-android-0.71.3-release/prefab/modules/turbomodulejsijni/include"
 				},
 				{
 					"backtrace" : 4,
 					"isSystem" : true,
-					"path" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/d7a0d7162cd0dedc21dff471e4b0bd0d/transformed/react-android-0.71.3-debug/prefab/modules/yoga/include"
+					"path" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/a1a0f5331c2ddcdf82f7b19c69aa597d/transformed/react-android-0.71.3-release/prefab/modules/yoga/include"
 				}
 			],
 			"language" : "CXX",
@@ -342,10 +342,6 @@
 	[
 		{
 			"backtrace" : 5,
-			"id" : "react_codegen_rngesturehandler_codegen::@39f233abcd2c728bc6ec"
-		},
-		{
-			"backtrace" : 5,
 			"id" : "react_codegen_reactnativemmkv::@53a90ad335aa3dba27a5"
 		},
 		{
@@ -355,6 +351,10 @@
 		{
 			"backtrace" : 5,
 			"id" : "react_codegen_rnscreens::@25bcbd507e98d3a854ad"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "react_codegen_rngesturehandler_codegen::@39f233abcd2c728bc6ec"
 		}
 	],
 	"id" : "appmodules::@6890427a1f51a3e7e1df",
@@ -368,122 +368,122 @@
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/d7a0d7162cd0dedc21dff471e4b0bd0d/transformed/react-android-0.71.3-debug/prefab/modules/fabricjni/libs/android.arm64-v8a/libfabricjni.so",
+				"fragment" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/a1a0f5331c2ddcdf82f7b19c69aa597d/transformed/react-android-0.71.3-release/prefab/modules/fabricjni/libs/android.armeabi-v7a/libfabricjni.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/d7a0d7162cd0dedc21dff471e4b0bd0d/transformed/react-android-0.71.3-debug/prefab/modules/react_newarchdefaults/libs/android.arm64-v8a/libreact_newarchdefaults.so",
+				"fragment" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/a1a0f5331c2ddcdf82f7b19c69aa597d/transformed/react-android-0.71.3-release/prefab/modules/react_newarchdefaults/libs/android.armeabi-v7a/libreact_newarchdefaults.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/d7a0d7162cd0dedc21dff471e4b0bd0d/transformed/react-android-0.71.3-debug/prefab/modules/react_render_componentregistry/libs/android.arm64-v8a/libreact_render_componentregistry.so",
+				"fragment" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/a1a0f5331c2ddcdf82f7b19c69aa597d/transformed/react-android-0.71.3-release/prefab/modules/react_render_componentregistry/libs/android.armeabi-v7a/libreact_render_componentregistry.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/d7a0d7162cd0dedc21dff471e4b0bd0d/transformed/react-android-0.71.3-debug/prefab/modules/runtimeexecutor/libs/android.arm64-v8a/libruntimeexecutor.so",
+				"fragment" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/a1a0f5331c2ddcdf82f7b19c69aa597d/transformed/react-android-0.71.3-release/prefab/modules/runtimeexecutor/libs/android.armeabi-v7a/libruntimeexecutor.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 5,
-				"fragment" : "/Users/hidayatrehmat/Documents/gagan/Welcome/android/app/build/intermediates/cxx/Debug/6h3e4s6t/obj/arm64-v8a/libreact_codegen_rngesturehandler_codegen.so",
+				"fragment" : "/Users/hidayatrehmat/Documents/gagan/Welcome/android/app/build/intermediates/cxx/RelWithDebInfo/595b1u4g/obj/armeabi-v7a/libreact_codegen_rngesturehandler_codegen.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 5,
-				"fragment" : "/Users/hidayatrehmat/Documents/gagan/Welcome/android/app/build/intermediates/cxx/Debug/6h3e4s6t/obj/arm64-v8a/libreact_codegen_reactnativemmkv.so",
+				"fragment" : "/Users/hidayatrehmat/Documents/gagan/Welcome/android/app/build/intermediates/cxx/RelWithDebInfo/595b1u4g/obj/armeabi-v7a/libreact_codegen_reactnativemmkv.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 5,
-				"fragment" : "/Users/hidayatrehmat/Documents/gagan/Welcome/android/app/build/intermediates/cxx/Debug/6h3e4s6t/obj/arm64-v8a/libreact_codegen_safeareacontext.so",
+				"fragment" : "/Users/hidayatrehmat/Documents/gagan/Welcome/android/app/build/intermediates/cxx/RelWithDebInfo/595b1u4g/obj/armeabi-v7a/libreact_codegen_safeareacontext.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 5,
-				"fragment" : "/Users/hidayatrehmat/Documents/gagan/Welcome/android/app/build/intermediates/cxx/Debug/6h3e4s6t/obj/arm64-v8a/libreact_codegen_rnscreens.so",
+				"fragment" : "/Users/hidayatrehmat/Documents/gagan/Welcome/android/app/build/intermediates/cxx/RelWithDebInfo/595b1u4g/obj/armeabi-v7a/libreact_codegen_rnscreens.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/d7a0d7162cd0dedc21dff471e4b0bd0d/transformed/react-android-0.71.3-debug/prefab/modules/react_render_imagemanager/libs/android.arm64-v8a/libreact_render_imagemanager.so",
+				"fragment" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/a1a0f5331c2ddcdf82f7b19c69aa597d/transformed/react-android-0.71.3-release/prefab/modules/react_render_imagemanager/libs/android.armeabi-v7a/libreact_render_imagemanager.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/d7a0d7162cd0dedc21dff471e4b0bd0d/transformed/react-android-0.71.3-debug/prefab/modules/rrc_image/libs/android.arm64-v8a/librrc_image.so",
+				"fragment" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/a1a0f5331c2ddcdf82f7b19c69aa597d/transformed/react-android-0.71.3-release/prefab/modules/rrc_image/libs/android.armeabi-v7a/librrc_image.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/b7ef0837c5b93bf01f5016087b9ff213/transformed/fbjni-0.3.0/prefab/modules/fbjni/libs/android.arm64-v8a/libfbjni.so",
+				"fragment" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/b7ef0837c5b93bf01f5016087b9ff213/transformed/fbjni-0.3.0/prefab/modules/fbjni/libs/android.armeabi-v7a/libfbjni.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/d7a0d7162cd0dedc21dff471e4b0bd0d/transformed/react-android-0.71.3-debug/prefab/modules/folly_runtime/libs/android.arm64-v8a/libfolly_runtime.so",
+				"fragment" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/a1a0f5331c2ddcdf82f7b19c69aa597d/transformed/react-android-0.71.3-release/prefab/modules/folly_runtime/libs/android.armeabi-v7a/libfolly_runtime.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/d7a0d7162cd0dedc21dff471e4b0bd0d/transformed/react-android-0.71.3-debug/prefab/modules/glog/libs/android.arm64-v8a/libglog.so",
+				"fragment" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/a1a0f5331c2ddcdf82f7b19c69aa597d/transformed/react-android-0.71.3-release/prefab/modules/glog/libs/android.armeabi-v7a/libglog.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/d7a0d7162cd0dedc21dff471e4b0bd0d/transformed/react-android-0.71.3-debug/prefab/modules/jsi/libs/android.arm64-v8a/libjsi.so",
+				"fragment" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/a1a0f5331c2ddcdf82f7b19c69aa597d/transformed/react-android-0.71.3-release/prefab/modules/jsi/libs/android.armeabi-v7a/libjsi.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/d7a0d7162cd0dedc21dff471e4b0bd0d/transformed/react-android-0.71.3-debug/prefab/modules/react_codegen_rncore/libs/android.arm64-v8a/libreact_codegen_rncore.so",
+				"fragment" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/a1a0f5331c2ddcdf82f7b19c69aa597d/transformed/react-android-0.71.3-release/prefab/modules/react_codegen_rncore/libs/android.armeabi-v7a/libreact_codegen_rncore.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/d7a0d7162cd0dedc21dff471e4b0bd0d/transformed/react-android-0.71.3-debug/prefab/modules/react_debug/libs/android.arm64-v8a/libreact_debug.so",
+				"fragment" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/a1a0f5331c2ddcdf82f7b19c69aa597d/transformed/react-android-0.71.3-release/prefab/modules/react_debug/libs/android.armeabi-v7a/libreact_debug.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/d7a0d7162cd0dedc21dff471e4b0bd0d/transformed/react-android-0.71.3-debug/prefab/modules/react_nativemodule_core/libs/android.arm64-v8a/libreact_nativemodule_core.so",
+				"fragment" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/a1a0f5331c2ddcdf82f7b19c69aa597d/transformed/react-android-0.71.3-release/prefab/modules/react_nativemodule_core/libs/android.armeabi-v7a/libreact_nativemodule_core.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/d7a0d7162cd0dedc21dff471e4b0bd0d/transformed/react-android-0.71.3-debug/prefab/modules/react_render_core/libs/android.arm64-v8a/libreact_render_core.so",
+				"fragment" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/a1a0f5331c2ddcdf82f7b19c69aa597d/transformed/react-android-0.71.3-release/prefab/modules/react_render_core/libs/android.armeabi-v7a/libreact_render_core.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/d7a0d7162cd0dedc21dff471e4b0bd0d/transformed/react-android-0.71.3-debug/prefab/modules/react_render_debug/libs/android.arm64-v8a/libreact_render_debug.so",
+				"fragment" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/a1a0f5331c2ddcdf82f7b19c69aa597d/transformed/react-android-0.71.3-release/prefab/modules/react_render_debug/libs/android.armeabi-v7a/libreact_render_debug.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/d7a0d7162cd0dedc21dff471e4b0bd0d/transformed/react-android-0.71.3-debug/prefab/modules/react_render_graphics/libs/android.arm64-v8a/libreact_render_graphics.so",
+				"fragment" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/a1a0f5331c2ddcdf82f7b19c69aa597d/transformed/react-android-0.71.3-release/prefab/modules/react_render_graphics/libs/android.armeabi-v7a/libreact_render_graphics.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/d7a0d7162cd0dedc21dff471e4b0bd0d/transformed/react-android-0.71.3-debug/prefab/modules/react_render_mapbuffer/libs/android.arm64-v8a/libreact_render_mapbuffer.so",
+				"fragment" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/a1a0f5331c2ddcdf82f7b19c69aa597d/transformed/react-android-0.71.3-release/prefab/modules/react_render_mapbuffer/libs/android.armeabi-v7a/libreact_render_mapbuffer.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/d7a0d7162cd0dedc21dff471e4b0bd0d/transformed/react-android-0.71.3-debug/prefab/modules/rrc_view/libs/android.arm64-v8a/librrc_view.so",
+				"fragment" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/a1a0f5331c2ddcdf82f7b19c69aa597d/transformed/react-android-0.71.3-release/prefab/modules/rrc_view/libs/android.armeabi-v7a/librrc_view.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/d7a0d7162cd0dedc21dff471e4b0bd0d/transformed/react-android-0.71.3-debug/prefab/modules/turbomodulejsijni/libs/android.arm64-v8a/libturbomodulejsijni.so",
+				"fragment" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/a1a0f5331c2ddcdf82f7b19c69aa597d/transformed/react-android-0.71.3-release/prefab/modules/turbomodulejsijni/libs/android.armeabi-v7a/libturbomodulejsijni.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/d7a0d7162cd0dedc21dff471e4b0bd0d/transformed/react-android-0.71.3-debug/prefab/modules/yoga/libs/android.arm64-v8a/libyoga.so",
+				"fragment" : "/Users/hidayatrehmat/.gradle/caches/transforms-3/a1a0f5331c2ddcdf82f7b19c69aa597d/transformed/react-android-0.71.3-release/prefab/modules/yoga/libs/android.armeabi-v7a/libyoga.so",
 				"role" : "libraries"
 			},
 			{

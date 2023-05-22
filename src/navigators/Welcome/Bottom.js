@@ -10,7 +10,6 @@ import { useNavigation } from '@react-navigation/native';
 const Bottom = ({ ...props }) => {
   const dispatch = useDispatch();
   const navigation = useNavigation();
-  console.log(props,"PROPS");
   const renderIndicator = () => {
     const arrayToBeTraversed = props.data;
     return (

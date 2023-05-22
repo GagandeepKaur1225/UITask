@@ -1,4 +1,4 @@
-import { FlatList, Image, Text, View } from 'react-native';
+import { Dimensions, FlatList, Image, Text, View } from 'react-native';
 import React, { useEffect } from 'react';
 
 import { Images } from '../../shared/Images';
@@ -6,6 +6,9 @@ import { style } from './style';
 import { widthPercentageToDP } from 'react-native-responsive-screen';
 
 const CustomList = ({ ...props }) => {
+  const { width, height } = Dimensions.get('window');
+  console.log(width, 'width of the screen is:');
+  let itemWidths = [];
   useEffect(() => {
     console.log(
       props?.reference?.current?._listRef,
@@ -32,8 +35,12 @@ const CustomList = ({ ...props }) => {
 
   const handleScroll = event => {
     const contentOffsetX = event.nativeEvent.contentOffset.x;
-    const itemIndex = Math.floor(contentOffsetX / 360);
-    console.log('check');
+    const values = event.nativeEvent.contentOffset;
+    console.log(values, 'values in event for width are:');
+    console.log(contentOffsetX, 'checking...');
+    const itemIndex = Math.floor(contentOffsetX / width);
+
+    console.log('check', itemIndex);
     props.pull_data(itemIndex);
   };
   return (

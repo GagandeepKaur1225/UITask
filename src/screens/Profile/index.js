@@ -26,8 +26,8 @@ const Profile = ({ route }) => {
       await GoogleSignin.signOut();
       console.log('LOGGED OUT');
       dispatch(changeLogin());
-      // navigation.goBack(); // Remember to remove the user from your app's state as well
-      navigation.navigate('Welcome');
+      navigation.goBack(); // Remember to remove the user from your app's state as well
+      // navigation.navigate('Welcome', { value: 0 });
     } catch (error) {
       console.error(error);
     }

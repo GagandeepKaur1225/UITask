@@ -10,11 +10,19 @@ import { View } from 'react-native';
 import { heightPercentageToDP } from 'react-native-responsive-screen';
 import { setWelcome } from '../../store/welcome';
 
-const Welcome = () => {
+const Welcome = ({ route }) => {
   const dataIndex = useSelector(data => data.welcome.indexList);
+  const objectInfo = route.params;
   const [indexRequired, setIndexRequired] = useState(0);
   const [currentIndex, setCurrentIndex] = useState(0);
   const flatlistRef = useRef(null);
+  useEffect(() => {
+    console.log('in use effect of welcome', objectInfo, route.params);
+    if (objectInfo?.value === 0) {
+      setCurrentIndex(0);
+      console.log('in if condition in use effect of welcome ');
+    }
+  }, [route.params]);
   const dispatch = useDispatch();
   const item = [
     {
