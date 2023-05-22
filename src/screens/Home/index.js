@@ -25,15 +25,15 @@ const Home = () => {
   }, []);
   return (
     <>
-      <ImageBackground
-        source={Images.backProfile}
+      {/* <ImageBackground
+        source={require('../../components/imagesAll/subtle-prism.png')}
         resizeMode="cover"
         style={{ flex: 1 }}
-      >
-        <View>
-          <SignIn />
-        </View>
-      </ImageBackground>
+      > */}
+      <View style={{ flex: 1, backgroundColor: '#87CEEB' }}>
+        <SignIn />
+      </View>
+      {/* </ImageBackground> */}
     </>
   );
 };

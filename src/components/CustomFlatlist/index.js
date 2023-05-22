@@ -6,19 +6,22 @@ import { style } from './style';
 import { widthPercentageToDP } from 'react-native-responsive-screen';
 
 const CustomList = ({ ...props }) => {
-
   useEffect(() => {
-    console.log(props?.reference?.current?._listRef, 'props?.referred?._getItem');
-    
-  }, [props])
-  
+    console.log(
+      props?.reference?.current?._listRef,
+      'props?.referred?._getItem',
+    );
+  }, [props]);
+
   const itemView = ({ item, index }) => {
-    console.log(item, 'item renedred');
-    console.log(item, index, 'item in reander item');
     return (
       <>
         <View style={{ width: widthPercentageToDP('100%') }}>
-          <Image source={Images.mainImage} style={style.imageStyle} />
+          <Image
+            source={item.image}
+            style={style.imageStyle}
+            resizeMode="contain"
+          />
           <Text style={style.headerText}>{item.heading}</Text>
           <Text style={style.heading}>{item.subHeading}</Text>
           <Text style={style.body}>{item.body}</Text>
@@ -30,7 +33,7 @@ const CustomList = ({ ...props }) => {
   const handleScroll = event => {
     const contentOffsetX = event.nativeEvent.contentOffset.x;
     const itemIndex = Math.floor(contentOffsetX / 360);
-    console.log("check");
+    console.log('check');
     props.pull_data(itemIndex);
   };
   return (

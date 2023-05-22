@@ -33,7 +33,7 @@ export const style = StyleSheet.create({
     // borderWidth: 2,
     // height: 80,
     position: 'absolute',
-    bottom:RFValue(60) 
+    bottom: RFValue(60),
   },
   skip: {
     flexDirection: 'row',

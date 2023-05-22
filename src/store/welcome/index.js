@@ -9,6 +9,7 @@ const slice = createSlice({
     loggedUser: '',
     welcomeShown: false,
     nameUser: '',
+    email: '',
   },
   reducers: {
     ChangeProgress: (initialState, payload) => {
@@ -26,6 +27,9 @@ const slice = createSlice({
     addUser: (initialState, payload) => {
       initialState.loggedUser = payload.payload;
     },
+    addEmail: (initialState, payload) => {
+      initialState.email = payload.payload;
+    },
     changeLogin: (initialState, payload) => {
       initialState.loggedUser = '';
     },
@@ -42,5 +46,6 @@ export const {
   addUser,
   changeLogin,
   setWelcome,
+  addEmail,
 } = slice.actions;
 export default slice.reducer;

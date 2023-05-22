@@ -21,7 +21,11 @@ const CustomComponent = () => {
         </TouchableOpacity>
       </View>
       <View>
-        <Image source={Images.mainImage} style={style.imageStyle} />
+        <Image
+          source={Images.flower}
+          style={style.imageStyle}
+          resizeMode="contain"
+        />
       </View>
       <View style={{ left: widthPercentageToDP('8%') }}>
         <Text style={style.headerText}>WE ARE CUTE</Text>

@@ -1,9 +1,9 @@
+import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
 import {
   heightPercentageToDP,
   widthPercentageToDP,
 } from 'react-native-responsive-screen';
 
-import { RFPercentage } from 'react-native-responsive-fontsize';
 import { StyleSheet } from 'react-native';
 
 export const style = StyleSheet.create({
@@ -18,7 +18,7 @@ export const style = StyleSheet.create({
   logOut: {
     width: widthPercentageToDP('60%'),
     top: heightPercentageToDP('5%'),
-    height: heightPercentageToDP('6%'),
+    height: heightPercentageToDP('7%'),
     alignSelf: 'center',
     borderRadius: 8,
     justifyContent: 'center',
@@ -29,5 +29,6 @@ export const style = StyleSheet.create({
   buttonText: {
     color: '#87CEEB',
     fontWeight: '900',
+    fontSize: RFValue(20),
   },
 });

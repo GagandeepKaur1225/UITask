@@ -12,6 +12,7 @@ export const style = StyleSheet.create({
         ? heightPercentageToDP('60%')
         : heightPercentageToDP('70%'),
     marginTop: heightPercentageToDP('8%'),
+    // borderWidth: 2,
   },
   imageStyle: {
     width: '90%',
@@ -22,10 +23,10 @@ export const style = StyleSheet.create({
     color: '#87CEEB',
     fontWeight: '700',
     left: widthPercentageToDP('8%'),
-    fontSize: RFValue(15),
+    fontSize: RFValue(21),
   },
   heading: {
-    fontSize: RFValue(20),
+    fontSize: RFValue(22),
     width: '85%',
     marginBottom: 3,
     marginTop: 3,
@@ -63,7 +64,7 @@ export const style = StyleSheet.create({
   body: {
     left: widthPercentageToDP('8%'),
     width: '85%',
-    fontSize: RFValue(10),
+    fontSize: RFValue(15),
   },
   container: {
     flexDirection: 'row',

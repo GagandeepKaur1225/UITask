@@ -18,21 +18,21 @@ const Welcome = () => {
   const dispatch = useDispatch();
   const item = [
     {
-      image: Images.flower,
+      image: Images.screen2,
       heading: 'WE ARE CUTE',
       subHeading: 'Discover all kinds of plants in the World.',
       body: 'Quickly scan the plant and find in our complete catalogue everything about the plant you want',
       isSkip: true,
     },
     {
-      image: Images.secondImage,
+      image: Images.flower,
       heading: 'WE ARE COMPLETE',
       subHeading: 'Share your best plan experiences',
       body: 'Quickly scan the plant and find in our complete catalogue everything about the plant you want',
       isSkip: true,
     },
     {
-      image: Images.mainImage,
+      image: Images.screen2,
       heading: 'WE ARE CUTE',
       subHeading: 'Beautiful plants for incredible experiences',
       body: 'Quickly scan the plant and find in our complete catalogue everything about the plant you want',
@@ -49,7 +49,7 @@ const Welcome = () => {
   };
   console.log(indexRequired, 'outside the render');
   return (
-    <View style={{height:heightPercentageToDP(100)}} >
+    <View style={{ height: heightPercentageToDP(100) }}>
       <TopView indexCheck={indexRequired} />
       <CustomList
         reference={flatlistRef}

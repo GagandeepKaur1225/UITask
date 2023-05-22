@@ -34,9 +34,10 @@ const ApplicationNavigator = () => {
             screenOptions={{ headerShown: false }}
             initialRouteName="Home"
           >
-            {/* <Stack.Screen name="Welcome" component={Welcome} /> */}
+            {/*  */}
             <Stack.Screen name="Home" component={Home} />
             <Stack.Screen name="Profile" component={Profile} />
+            <Stack.Screen name="Welcome" component={Welcome} />
           </Stack.Navigator>
         </NavigationContainer>
       ) : (

@@ -5,9 +5,9 @@ import {
 } from '@react-native-google-signin/google-signin';
 import { Image, Text, TouchableOpacity, View } from 'react-native';
 import React, { useEffect } from 'react';
+import { addEmail, addUser } from '../../store/welcome';
 
 import { Images } from '../../shared/Images';
-import { addUser } from '../../store/welcome';
 import { style } from './style';
 import { useDispatch } from 'react-redux';
 import { useNavigation } from '@react-navigation/native';
@@ -27,7 +27,7 @@ const SignIn = () => {
       console.log(userInfo, 'user info required is');
       navigation.navigate('Profile', { name: userInfo.user.givenName });
       dispatch(addUser(userInfo.user.givenName));
-      //   this.setState({ userInfo });
+      dispatch(addEmail(userInfo.user.email));
     } catch (error) {
       if (error.code === statusCodes.SIGN_IN_CANCELLED) {
         // user cancelled the login flow

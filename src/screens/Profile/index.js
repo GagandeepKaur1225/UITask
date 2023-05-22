@@ -15,6 +15,7 @@ const Profile = ({ route }) => {
   const navigation = useNavigation();
   const objectInfo = route.params;
   const dataLogged = useSelector(data => data.welcome.loggedUser);
+  const email = useSelector(data => data.welcome.email);
   useEffect(() => {
     GoogleSignin.configure();
     console.log('inn use effect');
@@ -25,7 +26,8 @@ const Profile = ({ route }) => {
       await GoogleSignin.signOut();
       console.log('LOGGED OUT');
       dispatch(changeLogin());
-      navigation.goBack(); // Remember to remove the user from your app's state as well
+      // navigation.goBack(); // Remember to remove the user from your app's state as well
+      navigation.navigate('Welcome');
     } catch (error) {
       console.error(error);
     }
@@ -34,9 +36,14 @@ const Profile = ({ route }) => {
   console.log(objectInfo, 'objectInfo is');
   return (
     <>
-      <ImageBackground source={Images.backProfile} style={{ flex: 1 }}>
+      {/* <ImageBackground
+        source={require('../../components/imagesAll/subtle-prism.png')}
+        style={{ flex: 1 }}
+      > */}
+      <View style={{ flex: 1, backgroundColor: '#87CEEB' }}>
         <View style={style.mainView}>
           <Text style={style.welcomeText}>Welcome {dataLogged} !!</Text>
+          <Text style={{ alignSelf: 'center' }}>{email}</Text>
           <TouchableOpacity
             style={style.logOut}
             onPress={() => signOut()}
@@ -47,24 +54,11 @@ const Profile = ({ route }) => {
               right: 20,
             }}
           >
-            <Text style={style.buttonText}>Sign OUT</Text>
+            <Text style={style.buttonText}>Sign Out</Text>
           </TouchableOpacity>
         </View>
-        {/* <View>
-          <TouchableOpacity
-            style={{ left: widthPercentageToDP('5%') }}
-            hitSlop={{
-              top: 5,
-              left: 20,
-              bottom: 10,
-              right: 20,
-            }}
-            onPress={() => navigation.goBack()}
-          >
-            <Text>BACK</Text>
-          </TouchableOpacity>
-        </View> */}
-      </ImageBackground>
+      </View>
+      {/* </ImageBackground> */}
     </>
   );
 };
