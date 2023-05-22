@@ -44,6 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
+  include("/Users/hidayatrehmat/Documents/gagan/Welcome/android/app/.cxx/Debug/6h3e4s6t/x86/rndocumentpicker_autolinked_build/cmake_install.cmake")
   include("/Users/hidayatrehmat/Documents/gagan/Welcome/android/app/.cxx/Debug/6h3e4s6t/x86/rngesturehandler_codegen_autolinked_build/cmake_install.cmake")
   include("/Users/hidayatrehmat/Documents/gagan/Welcome/android/app/.cxx/Debug/6h3e4s6t/x86/reactnativemmkv_autolinked_build/cmake_install.cmake")
   include("/Users/hidayatrehmat/Documents/gagan/Welcome/android/app/.cxx/Debug/6h3e4s6t/x86/safeareacontext_autolinked_build/cmake_install.cmake")

@@ -8,7 +8,7 @@ import { StyleSheet } from 'react-native';
 
 export const style = StyleSheet.create({
   mainView: {
-    top: heightPercentageToDP('40%'),
+    top: heightPercentageToDP('20%'),
     alignSelf: 'center',
   },
   welcomeText: {
@@ -30,5 +30,25 @@ export const style = StyleSheet.create({
     color: '#87CEEB',
     fontWeight: '900',
     fontSize: RFValue(20),
+  },
+  uploadMain: {
+    alignSelf: 'center',
+    // flexDirection: 'row',
+    marginTop: 10,
+    justifyContent: 'space-around',
+    width: widthPercentageToDP('70%'),
+    height: heightPercentageToDP('40%'),
+    borderWidth: 2,
+    borderRadius: 8,
+  },
+  buttonView: {
+    backgroundColor: '#fff',
+    // borderWidth: 2,
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 4,
+    borderRadius: 6,
+    width: '50%',
+    alignSelf: 'center',
   },
 });

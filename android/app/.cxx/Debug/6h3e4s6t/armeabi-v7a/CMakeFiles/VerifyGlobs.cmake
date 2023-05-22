@@ -12,6 +12,30 @@ if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   file(TOUCH_NOCREATE "/Users/hidayatrehmat/Documents/gagan/Welcome/android/app/.cxx/Debug/6h3e4s6t/armeabi-v7a/CMakeFiles/cmake.verify_globs")
 endif()
 
+# react_codegen_SRCS at /Users/hidayatrehmat/Documents/gagan/Welcome/node_modules/react-native-document-picker/android/build/generated/source/codegen/jni/CMakeLists.txt:9 (file)
+file(GLOB NEW_GLOB LIST_DIRECTORIES true "/Users/hidayatrehmat/Documents/gagan/Welcome/node_modules/react-native-document-picker/android/build/generated/source/codegen/jni/*.cpp")
+set(OLD_GLOB
+  "/Users/hidayatrehmat/Documents/gagan/Welcome/node_modules/react-native-document-picker/android/build/generated/source/codegen/jni/rndocumentpicker-generated.cpp"
+  )
+if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
+  message("-- GLOB mismatch!")
+  file(TOUCH_NOCREATE "/Users/hidayatrehmat/Documents/gagan/Welcome/android/app/.cxx/Debug/6h3e4s6t/armeabi-v7a/CMakeFiles/cmake.verify_globs")
+endif()
+
+# react_codegen_SRCS at /Users/hidayatrehmat/Documents/gagan/Welcome/node_modules/react-native-document-picker/android/build/generated/source/codegen/jni/CMakeLists.txt:9 (file)
+file(GLOB NEW_GLOB LIST_DIRECTORIES true "/Users/hidayatrehmat/Documents/gagan/Welcome/node_modules/react-native-document-picker/android/build/generated/source/codegen/jni/react/renderer/components/rndocumentpicker/*.cpp")
+set(OLD_GLOB
+  "/Users/hidayatrehmat/Documents/gagan/Welcome/node_modules/react-native-document-picker/android/build/generated/source/codegen/jni/react/renderer/components/rndocumentpicker/EventEmitters.cpp"
+  "/Users/hidayatrehmat/Documents/gagan/Welcome/node_modules/react-native-document-picker/android/build/generated/source/codegen/jni/react/renderer/components/rndocumentpicker/Props.cpp"
+  "/Users/hidayatrehmat/Documents/gagan/Welcome/node_modules/react-native-document-picker/android/build/generated/source/codegen/jni/react/renderer/components/rndocumentpicker/ShadowNodes.cpp"
+  "/Users/hidayatrehmat/Documents/gagan/Welcome/node_modules/react-native-document-picker/android/build/generated/source/codegen/jni/react/renderer/components/rndocumentpicker/States.cpp"
+  "/Users/hidayatrehmat/Documents/gagan/Welcome/node_modules/react-native-document-picker/android/build/generated/source/codegen/jni/react/renderer/components/rndocumentpicker/rndocumentpickerJSI-generated.cpp"
+  )
+if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
+  message("-- GLOB mismatch!")
+  file(TOUCH_NOCREATE "/Users/hidayatrehmat/Documents/gagan/Welcome/android/app/.cxx/Debug/6h3e4s6t/armeabi-v7a/CMakeFiles/cmake.verify_globs")
+endif()
+
 # react_codegen_SRCS at /Users/hidayatrehmat/Documents/gagan/Welcome/node_modules/react-native-gesture-handler/android/build/generated/source/codegen/jni/CMakeLists.txt:9 (file)
 file(GLOB NEW_GLOB LIST_DIRECTORIES true "/Users/hidayatrehmat/Documents/gagan/Welcome/node_modules/react-native-gesture-handler/android/build/generated/source/codegen/jni/*.cpp")
 set(OLD_GLOB

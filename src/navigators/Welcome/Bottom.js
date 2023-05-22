@@ -1,6 +1,5 @@
 import { Text, TouchableOpacity, View } from 'react-native';
 
-import Indicators from '../../components/CustomFlatlist/Indicators';
 import React from 'react';
 import { setWelcome } from '../../store/welcome';
 import { style } from './style';
@@ -26,7 +25,6 @@ const Bottom = ({ ...props }) => {
   };
 
   const handleNext = () => {
-    // props.set_index(prev => prev + 1);
     console.log(props.indexValue, 'index required in next button');
     if (props.referred.current) {
       props.referred.current.scrollToIndex({
