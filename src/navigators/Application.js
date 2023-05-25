@@ -8,6 +8,7 @@ import Home from '../screens/Home';
 import MainNavigator from './Main';
 import Profile from '../screens/Profile';
 import React from 'react';
+import SignIn from './Welcome/SignIn';
 import { Startup } from '../screens';
 import { View } from 'react-native';
 import Welcome from './Welcome';
@@ -37,6 +38,7 @@ const ApplicationNavigator = () => {
             <Stack.Screen name="Home" component={Home} />
             <Stack.Screen name="Profile" component={Profile} />
             <Stack.Screen name="Welcome" component={Welcome} />
+            {/* <Stack.Screen naem="SignIn" component={SignIn} /> */}
           </Stack.Navigator>
         </NavigationContainer>
       ) : (
@@ -49,6 +51,7 @@ const ApplicationNavigator = () => {
             <Stack.Screen name="Welcome" component={Welcome} />
             <Stack.Screen name="Home" component={Home} />
             <Stack.Screen name="Profile" component={Profile} />
+            {/* <Stack.Screen naem="SignIn" component={SignIn} /> */}
           </Stack.Navigator>
         </NavigationContainer>
       )}

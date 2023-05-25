@@ -51,7 +51,7 @@ const SignIn = () => {
   };
 
   return (
-    <View>
+    <View style={{ flex: 1 }}>
       <View style={{ flexDirection: 'row' }}>
         <TouchableOpacity
           style={style.buttonStyle}

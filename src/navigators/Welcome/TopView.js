@@ -1,5 +1,6 @@
 import { Text, TouchableOpacity, View } from 'react-native';
 
+import { RFValue } from 'react-native-responsive-fontsize';
 import React from 'react';
 import { setWelcome } from '../../store/welcome';
 import { style } from './style';
@@ -25,7 +26,7 @@ const TopView = ({ ...props }) => {
               right: 5,
             }}
           >
-            <Text>SKIP</Text>
+            <Text style={{ fontSize: RFValue(15) }}>SKIP</Text>
           </TouchableOpacity>
         </View>
       ) : (

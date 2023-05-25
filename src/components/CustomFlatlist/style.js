@@ -12,17 +12,20 @@ export const style = StyleSheet.create({
         ? heightPercentageToDP('60%')
         : heightPercentageToDP('70%'),
     marginTop: heightPercentageToDP('8%'),
-    // borderWidth: 2,
   },
   imageStyle: {
-    width: '90%',
+    width: '86%',
     height: '45%',
     margin: heightPercentageToDP('3%'),
+    // padding: 4,
+    alignSelf: 'center',
+    borderRadius: 10,
+    // borderWidth:2
   },
   headerText: {
-    color: '#87CEEB',
+    color: Platform.OS === 'ios' ? '#1e90ff' : '#87CEEB',
     fontWeight: '700',
-    left: widthPercentageToDP('8%'),
+    left: widthPercentageToDP('7%'),
     fontSize: RFValue(21),
   },
   heading: {
@@ -31,11 +34,11 @@ export const style = StyleSheet.create({
     marginBottom: 3,
     marginTop: 3,
     fontWeight: '700',
-    left: widthPercentageToDP('8%'),
+    left: widthPercentageToDP('7%'),
   },
   bottomView: {
     flexDirection: 'row',
-    width: widthPercentageToDP('80%'),
+    width: widthPercentageToDP('77%'),
     // borderWidth: 2,
     justifyContent: 'space-between',
     left: widthPercentageToDP('8%'),
@@ -44,8 +47,9 @@ export const style = StyleSheet.create({
   skip: {
     flexDirection: 'row',
     justifyContent: 'flex-end',
-    width: widthPercentageToDP('87%'),
+    width: widthPercentageToDP('89%'),
     top: heightPercentageToDP('4%'),
+    borderWidth:2
   },
   nextButton: {
     borderRadius: 20,
@@ -62,7 +66,7 @@ export const style = StyleSheet.create({
     fontSize: RFValue(20),
   },
   body: {
-    left: widthPercentageToDP('8%'),
+    left: widthPercentageToDP('7%'),
     width: '85%',
     fontSize: RFValue(15),
   },

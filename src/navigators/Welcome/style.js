@@ -13,7 +13,7 @@ export const style = StyleSheet.create({
     margin: heightPercentageToDP('6%'),
   },
   headerText: {
-    color: Platform.OS === 'ios' ? '#00fff3' : '#87CEEB',
+    color: Platform.OS === 'ios' ? '#1e90ff' : '#87CEEB',
     fontWeight: '700',
   },
   heading: {
@@ -24,17 +24,20 @@ export const style = StyleSheet.create({
   },
   bottomView: {
     flexDirection: 'row',
-    width: widthPercentageToDP('80%'),
+    width: widthPercentageToDP('85%'),
     justifyContent: 'space-between',
-    left: widthPercentageToDP('8%'),
+    left: widthPercentageToDP('7%'),
     position: 'absolute',
     bottom: RFValue(60),
+    // borderWidth:2
   },
   skip: {
     flexDirection: 'row',
     justifyContent: 'flex-end',
-    width: widthPercentageToDP('95%'),
+    width: widthPercentageToDP('92%'),
     top: heightPercentageToDP('4%'),
+    // borderWidth:2,
+    height: heightPercentageToDP('4%'),
   },
   nextButton: {
     borderRadius: 20,
@@ -42,7 +45,7 @@ export const style = StyleSheet.create({
     height: heightPercentageToDP('6%'),
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: Platform.OS === 'ios' ? '#00fff3' : '#87CEEB',
+    backgroundColor: Platform.OS === 'ios' ? '#1e90ff' : '#87CEEB',
   },
   nextText: {
     color: '#fff',
@@ -61,14 +64,14 @@ export const style = StyleSheet.create({
     width: 45,
     height: 10,
     borderRadius: 5,
-    backgroundColor: Platform.OS === 'ios' ? '#00fff3' : '#87CEEB',
+    backgroundColor: Platform.OS === 'ios' ? '#1e90ff' : '#87CEEB',
     marginHorizontal: 5,
   },
   indicatorNormal: {
     width: 10,
     height: 10,
     borderRadius: 5,
-    backgroundColor: Platform.OS === 'ios' ? '#00fff3' : '#87CEEB',
+    backgroundColor: Platform.OS === 'ios' ? '#1e90ff' : '#87CEEB',
     marginHorizontal: 5,
   },
   indicatorStyle: {
@@ -77,10 +80,11 @@ export const style = StyleSheet.create({
     alignItems: 'center',
   },
   buttonStyle: {
-    width: widthPercentageToDP('60%'),
-    top: heightPercentageToDP('35%'),
+    width: widthPercentageToDP('34%'),
+    top: heightPercentageToDP('46%'),
     height: heightPercentageToDP('6%'),
-    left: widthPercentageToDP('20%'),
+    left: widthPercentageToDP('33%'),
+    // alignSelf: 'center',
     borderRadius: 8,
     justifyContent: 'center',
     alignItems: 'center',
@@ -88,12 +92,13 @@ export const style = StyleSheet.create({
     backgroundColor: '#fff',
   },
   googleLogo: {
-    height: '60%',
-    width: '20%',
+    height: '80%',
+    width: '22%',
   },
   buttonText: {
     color: '#87CEEB',
     fontWeight: '900',
+    fontSize: RFValue(12),
   },
   logOut: {
     width: widthPercentageToDP('60%'),

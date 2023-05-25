@@ -46,9 +46,11 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/Users/hidayatrehmat/Documents/gagan/Welcome/android/app/.cxx/Debug/6h3e4s6t/x86_64/rndocumentpicker_autolinked_build/cmake_install.cmake")
   include("/Users/hidayatrehmat/Documents/gagan/Welcome/android/app/.cxx/Debug/6h3e4s6t/x86_64/rngesturehandler_codegen_autolinked_build/cmake_install.cmake")
+  include("/Users/hidayatrehmat/Documents/gagan/Welcome/android/app/.cxx/Debug/6h3e4s6t/x86_64/RNImagePickerSpec_autolinked_build/cmake_install.cmake")
   include("/Users/hidayatrehmat/Documents/gagan/Welcome/android/app/.cxx/Debug/6h3e4s6t/x86_64/reactnativemmkv_autolinked_build/cmake_install.cmake")
   include("/Users/hidayatrehmat/Documents/gagan/Welcome/android/app/.cxx/Debug/6h3e4s6t/x86_64/safeareacontext_autolinked_build/cmake_install.cmake")
   include("/Users/hidayatrehmat/Documents/gagan/Welcome/android/app/.cxx/Debug/6h3e4s6t/x86_64/rnscreens_autolinked_build/cmake_install.cmake")
+  include("/Users/hidayatrehmat/Documents/gagan/Welcome/android/app/.cxx/Debug/6h3e4s6t/x86_64/RNCWebViewSpec_autolinked_build/cmake_install.cmake")
 
 endif()
 
