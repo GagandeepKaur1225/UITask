@@ -80,7 +80,7 @@ export const style = StyleSheet.create({
     alignItems: 'center',
   },
   buttonStyle: {
-    width: widthPercentageToDP('34%'),
+    width: widthPercentageToDP('42%'),
     top: heightPercentageToDP('46%'),
     height: heightPercentageToDP('6%'),
     left: widthPercentageToDP('33%'),

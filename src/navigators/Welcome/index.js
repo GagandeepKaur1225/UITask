@@ -1,3 +1,4 @@
+import { Alert, View } from 'react-native';
 import React, { useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -6,11 +7,32 @@ import Bottom from './Bottom';
 import CustomList from '../../components/CustomFlatlist';
 import { Images } from '../../shared/Images';
 import TopView from './TopView';
-import { View } from 'react-native';
 import { heightPercentageToDP } from 'react-native-responsive-screen';
+import messaging from '@react-native-firebase/messaging';
 import { setWelcome } from '../../store/welcome';
 
 const Welcome = ({ route }) => {
+  useEffect(() => {
+    checkToken();
+    messaging().setBackgroundMessageHandler(onMessageRecieved);
+    messaging().onMessage(onMessageRecieved);
+  }, []);
+
+  async function onMessageRecieved(message) {
+    console.log('we recieved message', message);
+    Alert.alert(message.notification.body);
+  }
+
+  const checkToken = async () => {
+    await messaging().registerDeviceForRemoteMessages();
+    const token = await messaging().getToken();
+    if (token) {
+      console.log(token, 'token is');
+      Alert.alert(token);
+    } else {
+      console.log('unable to get token');
+    }
+  };
   const dataIndex = useSelector(data => data.welcome.indexList);
   const objectInfo = route.params;
   const [indexRequired, setIndexRequired] = useState(0);

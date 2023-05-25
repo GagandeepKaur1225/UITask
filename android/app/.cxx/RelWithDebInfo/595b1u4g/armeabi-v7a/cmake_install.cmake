@@ -44,10 +44,13 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
+  include("/Users/hidayatrehmat/Documents/gagan/Welcome/android/app/.cxx/RelWithDebInfo/595b1u4g/armeabi-v7a/rndocumentpicker_autolinked_build/cmake_install.cmake")
   include("/Users/hidayatrehmat/Documents/gagan/Welcome/android/app/.cxx/RelWithDebInfo/595b1u4g/armeabi-v7a/rngesturehandler_codegen_autolinked_build/cmake_install.cmake")
+  include("/Users/hidayatrehmat/Documents/gagan/Welcome/android/app/.cxx/RelWithDebInfo/595b1u4g/armeabi-v7a/RNImagePickerSpec_autolinked_build/cmake_install.cmake")
   include("/Users/hidayatrehmat/Documents/gagan/Welcome/android/app/.cxx/RelWithDebInfo/595b1u4g/armeabi-v7a/reactnativemmkv_autolinked_build/cmake_install.cmake")
   include("/Users/hidayatrehmat/Documents/gagan/Welcome/android/app/.cxx/RelWithDebInfo/595b1u4g/armeabi-v7a/safeareacontext_autolinked_build/cmake_install.cmake")
   include("/Users/hidayatrehmat/Documents/gagan/Welcome/android/app/.cxx/RelWithDebInfo/595b1u4g/armeabi-v7a/rnscreens_autolinked_build/cmake_install.cmake")
+  include("/Users/hidayatrehmat/Documents/gagan/Welcome/android/app/.cxx/RelWithDebInfo/595b1u4g/armeabi-v7a/RNCWebViewSpec_autolinked_build/cmake_install.cmake")
 
 endif()
 
