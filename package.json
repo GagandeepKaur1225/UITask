@@ -13,6 +13,7 @@
     "pod-install": "cd ios && RCT_NEW_ARCH_ENABLED=1 bundle exec pod install && cd .."
   },
   "dependencies": {
+    "@notifee/react-native": "^7.7.1",
     "@react-native-async-storage/async-storage": "^1.18.1",
     "@react-native-firebase/app": "^17.5.0",
     "@react-native-firebase/messaging": "^17.5.0",

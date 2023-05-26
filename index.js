@@ -8,6 +8,7 @@ import PushNotification, { Importance } from 'react-native-push-notification';
 import App from './src/App';
 import { name as appName } from './app.json';
 import messaging from '@react-native-firebase/messaging';
+import { useState } from 'react';
 
 // Must be outside of any component LifeCycle (such as `componentDidMount`).
 const checkToken = async () => {
@@ -64,14 +65,4 @@ PushNotification.configure({
     console.log('notification', notification);
   },
 });
-
-PushNotification.localNotification({
-  channelId: 'Notification',
-  vibration: 300,
-  actions: ['ReplyInput'],
-  message: 'I am notification',
-  reply_placeholder_text: 'Write your response...', // (required)
-  reply_button_text: 'Reply',
-});
-
 AppRegistry.registerComponent(appName, () => App);

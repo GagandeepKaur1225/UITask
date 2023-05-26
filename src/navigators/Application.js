@@ -27,19 +27,12 @@ const ApplicationNavigator = () => {
     messaging().setBackgroundMessageHandler(onMessageRecieved);
     messaging().onMessage(onMessageRecieved);
     messaging().onNotificationOpenedApp(remoteMessage => {
-      PushNotification.localNotification({
-        channelId: 'Notification',
-        vibration: 300,
-        actions: ['ReplyInput'],
-        message: remoteMessage.notification,
-        reply_placeholder_text: 'Write your response...', // (required)
-        reply_button_text: 'Reply',
-      });
       console.log(
         'Notification caused app to open from background state:',
         remoteMessage.notification,
       );
     });
+
     messaging()
       .getInitialNotification()
       .then(remoteMessage => {
@@ -49,20 +42,32 @@ const ApplicationNavigator = () => {
             remoteMessage.notification,
           );
           Alert.alert(remoteMessage.notification);
+        } else {
+          console.log('IN else of getInitaialNotification');
         }
       });
   }, []);
 
+  // useEffect(() => {
+  //   // PushNotification.getChannels(function (channel_ids) {
+  //   //   console.log(channel_ids); // ['channel_id_1']
+  //   // });
+  //   const unsubscribe = messaging().onMessage(async remoteMessage => {
+  //     PushNotification.localNotification({
+  //       message: remoteMessage.notification.body,
+  //       title: remoteMessage.notification.title,
+  //       bigPictureUrl: remoteMessage.notification.android.imageUrl,
+  //       smallIcon: remoteMessage.notification.android.imageUrl,
+  //       // channelId: remoteMessage.notification.android.channelId,
+  //       channelId: 'Notification',
+  //       vibrate: true,
+  //     });
+  //   });
+  //   return unsubscribe;
+  // }, []);
+
   async function onMessageRecieved(message) {
     console.log('we recieved message', message);
-    PushNotification.localNotification({
-      channelId: 'Notification',
-      vibration: 300,
-      actions: ['ReplyInput'],
-      message: message.notification,
-      reply_placeholder_text: 'Write your response...', // (required)
-      reply_button_text: 'Reply',
-    });
   }
 
   const checkToken = async () => {

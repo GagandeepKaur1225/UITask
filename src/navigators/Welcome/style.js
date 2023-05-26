@@ -111,4 +111,16 @@ export const style = StyleSheet.create({
     flexDirection: 'row',
     backgroundColor: '#fff',
   },
+  sendNotification: {
+    width: widthPercentageToDP('42%'),
+    top: heightPercentageToDP('66%'),
+    height: heightPercentageToDP('6%'),
+    left: widthPercentageToDP('33%'),
+    // alignSelf: 'center',
+    borderRadius: 8,
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'row',
+    backgroundColor: '#fff',
+  },
 });
