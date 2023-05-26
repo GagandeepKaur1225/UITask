@@ -11,7 +11,7 @@ import com.facebook.soloader.SoLoader;
 import java.util.List;
 import com.vinzscam.reactnativefileviewer.RNFileViewerPackage;
 import io.invertase.firebase.app.ReactNativeFirebaseAppPackage;
-
+import com.dieam.reactnativepushnotification.ReactNativePushNotificationPackage;
 public class MainApplication extends Application implements ReactApplication {
 
   private final ReactNativeHost mReactNativeHost = new DefaultReactNativeHost(this) {

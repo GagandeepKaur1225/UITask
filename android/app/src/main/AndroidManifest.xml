@@ -46,6 +46,9 @@
 			android:name="android.support.FILE_PROVIDER_PATHS"
 			android:resource="@xml/file_viewer_provider_paths"
 		/>
+    <meta-data
+      android:name="com.google.firebase.messaging.default_notification_channel_id"
+      android:value="..." />
 	</provider>
     </application>
     <queries>
